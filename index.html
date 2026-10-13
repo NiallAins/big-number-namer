@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <title>
+        The Big Number Namer
+    </title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    />
+
+    <!-- Styles -->
+    <link
+        rel="stylesheet"
+        href="./app/styles/style.css"
+    />
+</head>
+
+<body>
+    <h1 class="heading">
+        <span>The</span>
+        <span>Big</span>
+        <span>Number</span>
+        <span>Namer</span>
+    </h1>
+    <div class="lede">
+        Generate a name for any number within the range 
+        ±10<sup>3&times10<sup>36</sup>
+    </div>
+
+    <textarea
+        id="el_inp"
+        type="text"
+        onkeyup="update(
+            event.key,
+            event.target.value
+        )"
+    ></textarea>
+
+    <div class="output">
+        <div id="el_txt_num"></div>
+        <div id="el_txt_name"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
