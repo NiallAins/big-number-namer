@@ -2,8 +2,9 @@ body {
     font-family: 'Courier New';
     font-weight: bold;
     width: 512px;
-    max-width: 100%;
-    margin: 32px auto;
+    max-width: calc(100% - 32px);
+    margin: 16px auto;
+    padding: 16px;
 }
 
 .heading {
@@ -24,9 +25,8 @@ body {
 }
 
 textarea {
-    width: 100%;
+    width: calc(100% - 32px);
     height: 100px;
-    max-width: 100%;
     padding: 8px;
     border: 2px solid black;
     border-radius: 4px;
